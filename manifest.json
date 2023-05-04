@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Jira Ticket ID Copier",
+  "version": "1.0",
+  "description": "Adds a copy button to Jira ticket",
+  "permissions": ["activeTab", "clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.atlassian.net/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
